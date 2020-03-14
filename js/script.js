@@ -3,25 +3,25 @@ var today = new Date();
 var weekDay = '';
 switch (today.getDay()) {
     case 0:
-        weekDay = 'Sun';
+        weekDay = 'Sunday';
         break;
     case 1:
-        weekDay = 'Mon';
+        weekDay = 'Monday';
         break;
     case 2:
-        weekDay = 'Tue';
+        weekDay = 'Tueday';
         break;
     case 3:
-        weekDay = 'Wed';
+        weekDay = 'Wednesday';
         break;
     case 4:
-        weekDay = 'Thu';
+        weekDay = 'Thursday';
         break;
     case 5:
-        weekDay = 'Fri';
+        weekDay = 'Friday';
         break;
     case 6:
-        weekDay = 'Sat';
+        weekDay = 'Saturday';
         break;
 }
 var date = weekDay + String.fromCharCode(160) + String.fromCharCode(160) + String.fromCharCode(160) + today.getDate() + '-'+ (today.getMonth() + 1) + '-' + today.getFullYear();
@@ -47,12 +47,12 @@ if (hour > 5 && today.getHours() <= 7) {
     bgColor = '#fcb862';
     $(".sun").css("transform", 'rotate(-60deg) translate(40vw) rotate(-60deg)');
     $(".weather").css("left", '10%');
-} else if (hour <= 19) {
+} else if (hour <= 18) {
     bgColor = '#f56a42';
     $(".weather").css("left", '10%');
     $(".sun").css("transform", 'rotate(-30deg) translate(40vw) rotate(-30deg)');
 } else if (today.getHours() >= 19 || today.getHours() <= 5) {
-    bgColor = '#4e09b5';
+    bgColor = '#2c2e8a';
     $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
     $(".sun").css("background-color", '#e6dde4');
     $(".date").css("color", '#e6dde4');

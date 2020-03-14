@@ -77,8 +77,14 @@ body {
     left: 50%;
     transform: rotate(-120deg) translate(40vw) rotate(-120deg);
 }
-.forest {
+.citylight {
     width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.dark {
+    width: 100w;
     position: absolute;
     bottom: 0;
     left: 0;
