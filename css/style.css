@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bradley Hand', cursive;
     font-size: 12px;
 }
 .lightning {
@@ -310,7 +310,7 @@ body {
 }
 .sakuras .snowflake {
     color: pink;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 2em;
 }
 .snowflakes, .sakuras {

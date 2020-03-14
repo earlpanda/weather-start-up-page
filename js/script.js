@@ -33,26 +33,26 @@ $(".date").text(date);
 $(".time").text(time);
 
 // set bg color and sun's position depend on time
-var bgColor = '#feefc7';
+var bgColor = '#c7cefe';
 if (hour > 5 && today.getHours() <= 7) {
-    bgColor = '#efa18b';
+    bgColor = '#8fbeff';
     $(".sun").css("transform", 'rotate(-150deg) translate(40vw) rotate(-150deg)');
 } else if (hour <= 10) {
-    bgColor = '#e3c498';
+    bgColor = '#9ef2ff';
     $(".sun").css("transform", 'rotate(-120deg) translate(40vw) rotate(-120deg)');
 } else if (hour <= 14) {
-    bgColor = '#f6e9d2';
+    bgColor = '#8afbff';
     $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
 } else if (hour <= 16) {
-    bgColor = '#e3c498';
+    bgColor = '#fcb862';
     $(".sun").css("transform", 'rotate(-60deg) translate(40vw) rotate(-60deg)');
     $(".weather").css("left", '10%');
-} else if (hour <= 17) {
-    bgColor = '#efa18b';
+} else if (hour <= 19) {
+    bgColor = '#f56a42';
     $(".weather").css("left", '10%');
     $(".sun").css("transform", 'rotate(-30deg) translate(40vw) rotate(-30deg)');
-} else if (today.getHours() >= 18 || today.getHours() <= 5) {
-    bgColor = '#010a3d';
+} else if (today.getHours() >= 19 || today.getHours() <= 5) {
+    bgColor = '#4e09b5';
     $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
     $(".sun").css("background-color", '#e6dde4');
     $(".date").css("color", '#e6dde4');
