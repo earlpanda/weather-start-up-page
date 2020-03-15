@@ -176,7 +176,7 @@ $(document).ready(function() {
                 break;
             case 'add_fog': 
                 $(".fog").css("display", 'block');
-                $(".fog").css("filter", 'blur(20px)');
+                $(".fog").css("filter", 'blur(80px)');
                 break;
             default:
                 $(".sakuras .snowflake").css("display", 'block');

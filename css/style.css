@@ -83,12 +83,7 @@ body {
     bottom: 0;
     left: 0;
 }
-.dark {
-    width: 100w;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 .google {
     width: 10%;
     float: right;
@@ -420,10 +415,10 @@ body {
 @keyframes fogMoving {
     0%, 100% {
         transform: translateX(-10%);
-        opacity: 0.4;
+        opacity: 0.6;
     }
     50% {
         transform: translateX(10%);
-        opacity: 0.3;
+        opacity: 0.5;
     }
 }
