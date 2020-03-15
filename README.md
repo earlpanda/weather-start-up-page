@@ -8,3 +8,5 @@ Manifest.json: Use to active start up page
 `js/script.js`: Main script: script to run effect => the core to active focast is here
 
 `css/style.css`: Style for item of screen design
+
+I have personalized it based on the source code.
