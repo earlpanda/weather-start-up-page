@@ -77,7 +77,14 @@ body {
     left: 50%;
     transform: rotate(-120deg) translate(40vw) rotate(-120deg);
 }
-.citylight {
+.citydark img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.citylight img {
     width: 100vw;
     position: absolute;
     bottom: 0;

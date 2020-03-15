@@ -68,8 +68,19 @@ if (hour <= 4) {
     $(".google a").css("color", '#e6dde4');
     $(".google path").css("fill", '#e6dde4');
 } 
-$(".container").css("background-color", bgColor);    
+$(".container").css("background-color", bgColor);
 
+//background image change time by time
+var bgImage=' ';
+if (today.getHours() <= 4) {
+    $(".citydark").css("display",'block');
+} else if (today.getHours() <= 19) {
+    $(".citylight").css("display",'block');
+} else if (today.getHours() <= 23) {
+    $(".citydark").css("display",'block');
+}
+$(".container").css("background-image", bgImage);
+    
 // icon set: https://www.iconfinder.com/iconsets/weather-color-2
 var cloudy = '<img src="images/cloudy.png">';
 var foggy = '<img src="images/foggy.png">';
