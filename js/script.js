@@ -34,11 +34,19 @@ $(".time").text(time);
 
 // set bg color and sun's position depend on time
 var bgColor = '#c7cefe';
-if (hour > 5 && hour <= 7) {
+if (hour <= 4) {
+    bgColor = '#2c2e8a';
+    $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
+    $(".sun").css("background-color", '#e6dde4');
+    $(".date").css("color", '#e6dde4');
+    $(".time").css("color", '#e6dde4');
+    $(".google a").css("color", '#e6dde4');
+    $(".google path").css("fill", '#e6dde4');
+} else if (hour <= 8) {
     bgColor = '#8fbeff';
     $(".sun").css("transform", 'rotate(-150deg) translate(40vw) rotate(-150deg)');
 } else if (hour <= 10) {
-    bgColor = '#b8f5ff';
+    bgColor = '#bff6ff';
     $(".sun").css("transform", 'rotate(-120deg) translate(40vw) rotate(-120deg)');
 } else if (hour <= 14) {
     bgColor = '#8afbff';
@@ -51,7 +59,7 @@ if (hour > 5 && hour <= 7) {
     bgColor = '#f56a42';
     $(".weather").css("left", '10%');
     $(".sun").css("transform", 'rotate(-30deg) translate(40vw) rotate(-30deg)');
-} else if (hour >= 20 || hour <= 5) {
+} else if (hour <= 23) {
     bgColor = '#2c2e8a';
     $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
     $(".sun").css("background-color", '#e6dde4');
@@ -59,7 +67,7 @@ if (hour > 5 && hour <= 7) {
     $(".time").css("color", '#e6dde4');
     $(".google a").css("color", '#e6dde4');
     $(".google path").css("fill", '#e6dde4');
-}
+} 
 $(".container").css("background-color", bgColor);    
 
 // icon set: https://www.iconfinder.com/iconsets/weather-color-2
