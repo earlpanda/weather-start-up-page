@@ -60,7 +60,7 @@ if (hour <= 4) {
     $(".weather").css("left", '10%');
     $(".sun").css("transform", 'rotate(-30deg) translate(40vw) rotate(-30deg)');
 } else if (hour <= 23) {
-    bgColor = '#2c2e8a';
+    bgColor = '#353b78';
     $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
     $(".sun").css("background-color", '#e6dde4');
     $(".date").css("color", '#e6dde4');

@@ -147,7 +147,7 @@ body {
     border-radius: 10px;
 }
 .weather .icon img {
-    width: 100%;
+    width: 80%;
 }
 .weather .city {
     position: absolute;
