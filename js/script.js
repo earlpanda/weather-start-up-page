@@ -71,7 +71,7 @@ if (hour <= 4) {
 $(".container").css("background-color", bgColor);
 
 //background image change time by time
-var bgImage=' ';
+var bgImage='<img src="citylight.svg">';
 if (today.getHours() <= 4) {
     $(".citydark").css("display",'block');
 } else if (today.getHours() <= 19) {
