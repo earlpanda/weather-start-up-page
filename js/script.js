@@ -35,7 +35,7 @@ $(".time").text(time);
 // set bg color and sun's position depend on time
 var bgColor = '#c7cefe';
 if (hour <= 4) {
-    bgColor = '#2c2e8a';
+    bgColor = '#404791';
     $(".sun").css("transform", 'rotate(-90deg) translate(40vw) rotate(-90deg)');
     $(".sun").css("background-color", '#e6dde4');
     $(".date").css("color", '#e6dde4');
@@ -55,7 +55,7 @@ if (hour <= 4) {
     bgColor = '#fcb862';
     $(".sun").css("transform", 'rotate(-60deg) translate(40vw) rotate(-60deg)');
     $(".weather").css("left", '10%');
-} else if (hour <= 19) {
+} else if (hour <= 18) {
     bgColor = '#f56a42';
     $(".weather").css("left", '10%');
     $(".sun").css("transform", 'rotate(-30deg) translate(40vw) rotate(-30deg)');
@@ -74,7 +74,7 @@ $(".container").css("background-color", bgColor);
 var bgImage='<img src="citylight.svg">';
 if (today.getHours() <= 4) {
     $(".citydark").css("display",'block');
-} else if (today.getHours() <= 19) {
+} else if (today.getHours() <= 18) {
     $(".citylight").css("display",'block');
 } else if (today.getHours() <= 23) {
     $(".citydark").css("display",'block');
